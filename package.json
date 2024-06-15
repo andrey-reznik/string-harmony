@@ -1,0 +1,78 @@
+{
+  "name": "string-harmony",
+  "description": "A utility class for performing various file operations such as reading, writing, appending, and inserting lines both synchronously and asynchronously.",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "homepage": "https://github.com/andrey-reznik/string-harmony#readme",
+  "bugs": {
+    "url": "https://github.com/andrey-reznik/string-harmony/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrey-reznik/string-harmony.git"
+  },
+  "scripts": {
+    "build": "tsc && vite build",
+    "test:unit": "vitest",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "file",
+    "manipulation",
+    "file operations",
+    "read file",
+    "write file",
+    "append line",
+    "insert line",
+    "synchronous",
+    "asynchronous",
+    "nodejs",
+    "file system",
+    "text files",
+    "file editing",
+    "file handling",
+    "file utilities",
+    "file manipulation",
+    "file processing"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.5.0",
+    "@stylistic/eslint-plugin-js": "^2.2.0",
+    "@stylistic/eslint-plugin-ts": "^2.2.0",
+    "@types/node": "^20.14.2",
+    "@vitest/coverage-v8": "^1.6.0",
+    "eslint": "9.x",
+    "globals": "^15.4.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
+    "prettier": "3.3.2",
+    "typescript": "^5.2.2",
+    "typescript-eslint": "^7.13.0",
+    "vite": "^5.2.0",
+    "vite-plugin-dts": "^3.9.1",
+    "vitest": "^1.6.0"
+  },
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "/dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "lint-staged": {
+    "*.{ts,json}": [
+      "prettier --write"
+    ]
+  },
+  "packageManager": "pnpm@9.3.0+sha512.ee7b93e0c2bd11409c6424f92b866f31d3ea1bef5fbe47d3c7500cdc3c9668833d2e55681ad66df5b640c61fa9dc25d546efa54d76d7f8bf54b13614ac293631"
+}
