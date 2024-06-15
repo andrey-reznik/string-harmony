@@ -2,7 +2,7 @@ import fs from 'node:fs'
 import { promises as fsp } from 'node:fs'
 import { getErrorMessage } from './errorHandler.ts'
 
-export class StringHarmony {
+export default class StringHarmony {
   private readonly filePath: string
 
   constructor(filePath: string) {

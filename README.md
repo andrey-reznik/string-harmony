@@ -15,7 +15,7 @@ pnpm install string-harmony
 Here are some example code snippets demonstrating how to use the `string-harmony` package:
 
 ```javascript
-import { StringHarmony } from 'string-harmony'
+import StringHarmony from 'string-harmony'
 
 // Initialize with file path
 const stringHarmony = new StringHarmony('path/to/your/file.txt')

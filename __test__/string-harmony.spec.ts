@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest'
 import fs from 'node:fs'
 import { promises as fsp } from 'node:fs'
-import { StringHarmony } from '../src'
+import StringHarmony from '../src'
 import { getErrorMessage } from '../src/errorHandler.ts'
 
 // Мокируем getErrorMessage
