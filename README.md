@@ -20,30 +20,30 @@ import StringHarmony from 'string-harmony'
 // Initialize with file path
 const stringHarmony = new StringHarmony('path/to/your/file.txt')
 
-// Asynchronous usage
-(async () => {
-  // Read file
-  const lines = await stringHarmony.readFileAsync()
-  console.log(lines)
+  // Asynchronous usage
+  (async () => {
+    // Read file
+    const lines = await stringHarmony.readFileAsync()
+    console.log(lines)
 
-  // Write file
-  await stringHarmony.writeFileAsync(['line1', 'line2'])
+    // Write file
+    await stringHarmony.writeFileAsync(['line1', 'line2'])
 
-  // Append line
-  await stringHarmony.appendLineAsync('new line')
+    // Append line
+    await stringHarmony.appendLineAsync('new line')
 
-  // Prepend line
-  await stringHarmony.prependLineAsync('first line')
+    // Prepend line
+    await stringHarmony.prependLineAsync('first line')
 
-  // Insert line at specific index
-  await stringHarmony.insertLineAtAsync('inserted line', 1)
+    // Insert line at specific index
+    await stringHarmony.insertLineAtAsync('inserted line', 1)
 
-  // Append line at specific index
-  await stringHarmony.appendLineAtAsync('appended line', 1)
+    // Append line at specific index
+    await stringHarmony.appendLineAtAsync('appended line', 1)
 
-  // Prepend line at specific index
-  await stringHarmony.prependLineAtAsync('prepended line', 1)
-})()
+    // Prepend line at specific index
+    await stringHarmony.prependLineAtAsync('prepended line', 1)
+  })()
 
 // Synchronous usage
 try {
