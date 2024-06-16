@@ -2,7 +2,7 @@
   "name": "string-harmony",
   "description": "A utility class for performing various file operations such as reading, writing, appending, and inserting lines both synchronously and asynchronously.",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "homepage": "https://github.com/andrey-reznik/string-harmony#readme",
   "bugs": {
