@@ -4,12 +4,12 @@ import { promises as fsp } from 'node:fs'
 import StringHarmony from '../src'
 import { getErrorMessage } from '../src/errorHandler.ts'
 
-// Мокируем getErrorMessage
+// Mock getErrorMessage
 vi.mock('./errorHandler.ts', () => ({
   getErrorMessage: vi.fn((error) => getErrorMessage(error)),
 }))
 
-// Мокируем fs и fsp модули
+// Mock 'fs' and 'fsp' modules
 vi.mock('node:fs', () => {
   const originalFs = vi.importActual('node:fs')
   return {
