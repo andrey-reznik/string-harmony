@@ -1,5 +1,7 @@
 # string-harmony
 
+[![Node.js CI status](https://github.com/andrey-reznik/string-harmony/workflows/Node.js%20CI/badge.svg)](https://github.com/andrey-reznik/string-harmony/actions)
+
 A utility class for performing various file operations such as reading, writing, appending, and inserting lines both synchronously and asynchronously. Ideal for manipulating text files efficiently in Node.js projects.
 
 ## Installation
@@ -22,26 +24,26 @@ const stringHarmony = new StringHarmony('path/to/your/file.txt')
 
   // Asynchronous usage
   (async () => {
-    // Read file
+// Read file
     const lines = await stringHarmony.readFileAsync()
     console.log(lines)
 
-    // Write file
+// Write file
     await stringHarmony.writeFileAsync(['line1', 'line2'])
 
-    // Append line
+// Append line
     await stringHarmony.appendLineAsync('new line')
 
-    // Prepend line
+// Prepend line
     await stringHarmony.prependLineAsync('first line')
 
-    // Insert line at specific index
+// Insert line at specific index
     await stringHarmony.insertLineAtAsync('inserted line', 1)
 
-    // Append line at specific index
+// Append line at specific index
     await stringHarmony.appendLineAtAsync('appended line', 1)
 
-    // Prepend line at specific index
+// Prepend line at specific index
     await stringHarmony.prependLineAtAsync('prepended line', 1)
   })()
 
